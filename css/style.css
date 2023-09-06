@@ -572,16 +572,16 @@ video {
   margin-top: 4rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
 
 .inline-flex {
   display: inline-flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-screen {
@@ -652,10 +652,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\.\.\/public\/images\/hero-mobile\.jpg\'\)\] {
-  background-image: url('../public/images/hero-mobile.jpg');
 }
 
 .p-4 {
@@ -779,23 +775,9 @@ video {
   --tw-ring-color: hsl(235 18% 26% / var(--tw-ring-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:invisible {
-    visibility: hidden;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:visible {
     visibility: visible;
-  }
-
-  .md\:invisible {
-    visibility: hidden;
   }
 
   .md\:relative {
@@ -937,25 +919,9 @@ video {
     border-radius: 0.75rem;
   }
 
-  .md\:rounded-b-2xl {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-  }
-
-  .md\:bg-none {
-    background-image: none;
-  }
-
-  .md\:bg-\[url\(\'\.\.\/public\/images\/hero-desktop\.jpg\'\)\] {
-    background-image: url('../public/images/hero-desktop.jpg');
-  }
-
-  .md\:bg-\[url\(\'\.\/images\/illustration-sign-up-desktop\.svg\'\)\] {
-    background-image: url('./images/illustration-sign-up-desktop.svg');
-  }
-
-  .md\:bg-\[url\(\'\.\.\/images\/illustration-sign-up-desktop\.svg\'\)\] {
-    background-image: url('../images/illustration-sign-up-desktop.svg');
+  .md\:bg-CharcoalGrey {
+    --tw-bg-opacity: 1;
+    background-color: hsl(235 18% 26% / var(--tw-bg-opacity));
   }
 
   .md\:p-8 {
@@ -1179,12 +1145,6 @@ video {
   .md\:hover\:bg-Tomato:hover {
     --tw-bg-opacity: 1;
     background-color: hsl(4 100% 67% / var(--tw-bg-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:bg-\[url\(\'\.\.\/public\/images\/hero-desktop\.jpg\'\)\] {
-    background-image: url('../public/images/hero-desktop.jpg');
   }
 }
 
