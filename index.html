@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <!--GOOGlE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./css/style.css" />
 
+  <title>
+    Frontend Mentor | Newsletter sign-up form with success message
+  </title>
 </head>
+
 <body>
+  <!--BAckground container-->
+  <div class="font-Roboto flex items-center justify-center h-screen bg-CharcoalGrey">
+    <!--Card-->
+    <div class="bg-white md:p-14">
+      <!--Flex container-->
+      <div class="flex flex-col md:flex-row-reverse md:p-8 md:rounded-3xl md:shadow-2xl ">
+        <img src="./images/illustration-sign-up-mobile.svg" alt="mobile_cover" class="md:hidden ">
+        <img src="./images/illustration-sign-up-desktop.svg" alt="Desktop_cover"
+          class="invisible absolute md:visible md:relative rounded-b-2xl">
+        <!--Content-->
+        <div class="p-6 mt-4  md:mt-0 md:max-w-md">
 
-  <!-- Sign-up form start -->
+          <div class="space-y-8 md:py-6 ">
+            <div>
+              <h1
+                class="text-CharcoalGrey font-bold text-4xl tracking-wider font-Roboto md:text-6xl md:tracking-normal md:mx-auto">
+                Stay updated!
+              </h1>
+            </div>
+            <div>
+              <p class="text-CharcoalGrey">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+            </div>
+          </div>
+          <!--Features Section-->
+          <div class="font-Roboto space-y-3 my-6 md:space-y-2 md:my-0  md:tracking-wide" id="featuers">
+            <div class="space-x-3 inline-flex items-baseline">
+              <img src="./images/icon-list.svg" alt="icon" class="" />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="space-x-3 flex items-baseline">
+              <img src="./images/icon-list.svg" alt="icon" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="space-x-3 flex items-baseline">
+              <img src="./images/icon-list.svg" alt="icon" />
+              <p>And much more!</p>
+            </div>
+          </div>
 
-  Stay updated!
+          <div class="mb-4 md:max-w-sm md:my-6">
+            <!--Form-->
+            <form action="submit" id="email-form">
+              <p class="font-bold text-xs text-CharcoalGrey md:p-2 md:pt-3">Email address</p>
+              <input type="email" name="email" id="email-address" placeholder="email@company.com"
+                class="placeholder:text-Grey p-4 mb-6 flex w-full rounded-lg border focus:outline-none focus:ring-1 focus:ring-CharcoalGrey border-Grey" />
+              <button class="text-White font-bold rounded-lg flex w-full bg-CharcoalGrey justify-center p-4 hover:bg-Tomato hover:shadow-lg hover:shadow-Tomato">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  <footer class="font-spartan bg-cream text-xs text-center md:mt-12">
+  <footer class="font-spartan bg-cream text-xs text-center mt-16 md:mt-0">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500" target="_blank">Frontend Mentor</a>.
-    Coded
-    by
+    Coded by
     <a href="https://github.com/Kofiastro/" class="text-blue-500" target="_blank">Kofi Danso Amakye </a>.
   </footer>
 </body>
+
 </html>
