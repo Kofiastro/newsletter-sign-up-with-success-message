@@ -16,12 +16,21 @@ function emailValid(e) {
     if (emailInput === '') {
         errMsg.innerHTML = 'Valid email required';
         input.classList.add("border-Tomato");
+
     } else if (!ValidateEmail(input.value)) {
         errMsg.innerHTML = 'Valid email required';
         input.classList.add("border-Tomato");
-    }else  {
+        return
+    }else {
        const MyWindow= window.open("./feedback.html", "MyWindow");
     }
+    input.value='';
+    input.classList.remove("border-Tomato");
+    input.classList.add("border-CharcoalGrey");
+    errMsg.innerHTML = '';
+
+
+
 }
 
 function dismissBtn(){
