@@ -12,6 +12,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js" defer></script>
 
   <title>
     Frontend Mentor | Newsletter sign-up form with success message
@@ -20,68 +21,73 @@
 
 <body>
   <main>
-  <!--BAckground container-->
-  <div class="font-Roboto flex items-center justify-center h-screen bg-white md:bg-CharcoalGrey">
-    <!--Card-->
-    <div class="bg-white md:rounded-3xl md:shadow-2xl  ">
-      <!--Flex container-->
-      <div class="flex flex-col md:flex-row-reverse md:p-8 ">
-        <img src="./images/illustration-sign-up-mobile.svg" alt="mobile_cover" class="md:hidden ">
-        <img src="./images/illustration-sign-up-desktop.svg" alt="Desktop_cover"
-          class="invisible absolute md:visible md:relative rounded-b-2xl md:max-w-md">
-        <!--Content-->
-        <div class="p-6 mt-4  md:mt-0 md:max-w-md ">
+    <!--BAckground container-->
+    <div class="font-Roboto flex items-center justify-center h-screen bg-white md:bg-CharcoalGrey">
+      <!--Card-->
+      <div class="bg-white md:rounded-3xl md:shadow-2xl  ">
+        <!--Flex container-->
+        <div class="flex flex-col md:flex-row-reverse md:p-8 ">
+          <img src="./images/illustration-sign-up-mobile.svg" alt="mobile_cover" class="md:hidden ">
+          <img src="./images/illustration-sign-up-desktop.svg" alt="Desktop_cover"
+            class="invisible absolute md:visible md:relative rounded-b-2xl md:max-w-md">
+          <!--Content-->
+          <div class="p-6 mt-4  md:mt-0 md:max-w-md ">
 
-          <div class="space-y-8 md:py-6 ">
-            <div>
-              <h1
-                class="text-CharcoalGrey font-bold text-4xl tracking-wider font-Roboto md:text-6xl md:tracking-normal md:mx-auto">
-                Stay updated!
-              </h1>
+            <div class="space-y-8 md:py-6 ">
+              <div>
+                <h1
+                  class="text-CharcoalGrey font-bold text-4xl tracking-wider font-Roboto md:text-6xl md:tracking-normal md:mx-auto">
+                  Stay updated!
+                </h1>
+              </div>
+              <div>
+                <p class="text-CharcoalGrey">
+                  Join 60,000+ product managers receiving monthly updates on:
+                </p>
+              </div>
             </div>
-            <div>
-              <p class="text-CharcoalGrey">
-                Join 60,000+ product managers receiving monthly updates on:
-              </p>
+            <!--Features Section-->
+            <div class="font-Roboto space-y-3 my-6 md:space-y-2 md:my-0  md:tracking-wide" id="featuers">
+              <div class="space-x-3 inline-flex items-baseline">
+                <img src="./images/icon-list.svg" alt="icon" class="" />
+                <p>Product discovery and building what matters</p>
+              </div>
+              <div class="space-x-3 flex items-baseline">
+                <img src="./images/icon-list.svg" alt="icon" />
+                <p>Measuring to ensure updates are a success</p>
+              </div>
+              <div class="space-x-3 flex items-baseline">
+                <img src="./images/icon-list.svg" alt="icon" />
+                <p>And much more!</p>
+              </div>
             </div>
-          </div>
-          <!--Features Section-->
-          <div class="font-Roboto space-y-3 my-6 md:space-y-2 md:my-0  md:tracking-wide" id="featuers">
-            <div class="space-x-3 inline-flex items-baseline">
-              <img src="./images/icon-list.svg" alt="icon" class="" />
-              <p>Product discovery and building what matters</p>
-            </div>
-            <div class="space-x-3 flex items-baseline">
-              <img src="./images/icon-list.svg" alt="icon" />
-              <p>Measuring to ensure updates are a success</p>
-            </div>
-            <div class="space-x-3 flex items-baseline">
-              <img src="./images/icon-list.svg" alt="icon" />
-              <p>And much more!</p>
-            </div>
-          </div>
 
-          <div class="mb-4 md:max-w-sm md:my-6">
-            <!--Form-->
-            <form action="submit" id="email-form">
-              <p class="font-bold text-xs p-1 text-CharcoalGrey md:p-2 md:pt-3">Email address</p>
-              <input type="email" name="email" id="email-address" placeholder="email@company.com"
-                class="placeholder:text-Grey p-4 mb-6 flex w-full rounded-lg border focus:outline-none focus:ring-1 focus:ring-CharcoalGrey border-Grey" />
-            </form>
-            <a href="./feedback.html" target="_blank" rel="noopener noreferrer"><button class="text-White font-bold rounded-lg flex w-full bg-CharcoalGrey justify-center p-4 hover:bg-Tomato hover:shadow-lg hover:shadow-Tomato">
-              Subscribe to monthly newsletter
-            </button></a> 
+            <div class="mb-4 md:max-w-sm md:my-6">
+              <!--Form-->
+              <form action="submit" id="email-form">
+                <div class="flex space-x-28 md:space-x-40 ">
+                  <p class="font-bold text-xs p-1 text-CharcoalGrey md:p-2 md:pt-3 ">Email address</p>
+                  <p id="err-msg" class="text-Tomato font-bold text-xs p-1 right-6 md:p-2 md:pt-3 "></p>
+                </div>
+                
+                <input type="text" name="email" id="email-address" placeholder="email@company.com"
+                  class="placeholder:text-Grey p-4 mb-6 flex w-full rounded-lg border-2 focus:outline-none  " />
+                  <button class="text-White font-bold rounded-lg flex w-full bg-CharcoalGrey justify-center p-4 hover:bg-Tomato hover:shadow-lg hover:shadow-Tomato">
+                  Subscribe to monthly newsletter
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
-<footer class="font-spartan bg-cream text-xs text-center ">
-  Challenge by
-  <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500" target="_blank">Frontend Mentor</a>.
-  Coded by
-  <a href="https://github.com/Kofiastro/" class="text-blue-500" target="_blank">Kofi Danso Amakye </a>.
-</footer>
+  </main>
+  <footer class="font-spartan bg-cream text-xs text-center ">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500" target="_blank">Frontend Mentor</a>.
+    Coded by
+    <a href="https://github.com/Kofiastro/" class="text-blue-500" target="_blank">Kofi Danso Amakye </a>.
+  </footer>
 </body>
+
 </html>
